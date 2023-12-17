@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  dev:
+    build: 
+      dockerfile: ./dockerfile
+    working_dir: /workDir
+    volumes:
+      - ../:/workDir
