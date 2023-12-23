@@ -3,6 +3,5 @@ services:
   dev:
     build: 
       dockerfile: ./dockerfile
-    working_dir: /workDir
     volumes:
       - ../:/workDir

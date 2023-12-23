@@ -10,4 +10,6 @@ RUN apt update && apt install -y \
   && apt clean
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-12 20
 RUN update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 20
+VOLUME /workDir
+WORKDIR /workDir
 CMD ["bash"]
